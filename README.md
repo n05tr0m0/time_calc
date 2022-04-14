@@ -36,4 +36,19 @@ Hours can be specified without zero, if you like.
 
 Also type `-h` for read help.
 
+For add a command to the system, run the following:<br>
+```bash
+# for bash
+echo 'alias timecalc="path/to/file.py' >> ~/.bashrc
+
+# for zsh
+echo 'alias timecalc="path/to/file.py' >> ~/.zshrc
+
+# restart the shell
+exec $SHELL
+# or reload config
+source ~/.bashrc # for bash
+source ~/.zshrc # for zsh
+```
+
 Enjoy =]
